@@ -17,16 +17,16 @@
 
         <nav class="navbar">
             <ul>
+                <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">About</a></li>
-                
                 <li><a href="#">Home</a></li>
             </ul>
         </nav>
 
     </header>
-
+    <div class="black-background"></div>
     <section class="Home">
 
 
@@ -34,65 +34,166 @@
 
             <div class="headline">
                 <h3>Hi,there!!</h3>
-                <h2>I'm  <span>Swagoto Das</span></h2>
-                <h4>A  <span1>CS undergrad student</span1></h4>
+                <h2>I'm <span>Swagoto Das</span></h2>
+                <h4>A <span1>CS undergrad student</span1>
+                </h4>
                 <p>As a passionate and dedicated computer science undergraduate,
-                     I embark on a journey to explore the dynamic world of technology.<br>
-                     I seek opportunities to apply my skills in real-world scenarios. 
-                     Whether it's collaborating on exciting projects or delving into the latest advancements in the tech landscape,
-                      I am on a mission to contribute meaningfully to the ever-evolving realm of computer science."
+                    I embark on a journey to explore the dynamic world of technology.<br>
+                    I seek opportunities to apply my skills in real-world scenarios.
+                    Whether it's collaborating on exciting projects or delving into the latest advancements in the tech
+                    landscape,
+                    I am on a mission to contribute meaningfully to the ever-evolving realm of computer science."
                 </p>
                 <div class="home-icons">
-                    <a href="#"><i class='bx bxl-facebook'></i></box-icon></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></box-icon></a> <!--icons from boxicons-->
                     <a href="#"><i class='bx bxl-instagram'></i></box-icon></a>
                     <a href="#"><i class='bx bxl-linkedin'></i></box-icon></a>
                     <a href="#"><i class='bx bxl-twitter'></i></box-icon></a>
 
                 </div>
             </div>
-          <!--  <div class="img"><img src="person.jpg" alt ="This is my picture" style="width:320px;height:390px;"></div>-->
+            <!--  <div class="img"><img src="person.jpg" alt ="This is my picture" style="width:320px;height:390px;"></div>-->
 
         </div>
     </section>
 
-<!------aboout starts here------>
+    <!------aboout starts here------>
 
     <div id="About">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="person.jpg" alt ="This is my picture" style="width:320px;height:390px;">
+                    <img src="person.jpg" alt="This is my picture" style="width:320px;height:390px;">
                 </div>
                 <div class="about-col-2">
                     <h2 class="subtitle">About Me</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Molestiae, nobis laborum doloribus sunt, 
-                         nam corrupti animi cumque, accusamus vel esse ipsam.
-                     </p>
+                        Molestiae, nobis laborum doloribus sunt,
+                        nam corrupti animi cumque, accusamus vel esse ipsam.
+                    </p>
 
-                     <div class="tabtile">
-                        <p class="tab active-link">Skills</p>
-                        <p class="tab">Experience</p>
-                        <p class="tab">Education</p>
-                     </div>
-                     <div class="tab-contents active-tab">
-                    <ul>
-                        <li>UI/UXb <br> Web and App interfaces</li>
-                        <li>Web Devlopment</li>
-                        <li>App development <br> Android and Desktop framework Applications</li>
-                    </ul>
-                     </div>
-                     <div class="tab-contents">
+                    <div class="tabtile">
+                        <p class="tab active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab" onclick="opentab('experience')">Experience</p>
+                        <p class="tab" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li>Newbie,<span>wishing</span> to get  experience</li>
-                           
+                            <li>UI/UXb <br> Web and App interfaces</li>
+                            <li>Web Devlopment</li>
+                            <li>App development <br> Android and Desktop framework Applications</li>
                         </ul>
-                         </div>
-    
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Newbie,<span>wishing</span> to get experience</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>Khluna University of Engineering and Technology <br> march 2022-current</li>
+                            <li>Bogure Government College,Bogura <br>2018-2021,Passed HSC</li>
+                            <li>BIAM Model School And College,Bogura <br>Passed SSC</li>
+
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!----------services------------->
+
+    <div id="services">
+        <div class="container">
+            <div class="subtitle">
+                <div>Services I provide</div>
+                <div class="servicelist">
+                    <div>
+                        <h4>Web <br>Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur,
+                                ratione architecto impedit tempore corrupti et
+                                praesentium iure, quod eum odio est voluptate incidunt
+                            </p>
+                    </div>
+                    <div>
+                        <h4>Devloping<br>a Application</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur,
+                                ratione architecto impedit tempore corrupti et
+                                praesentium iure, quod eum odio est voluptate incidunt
+                            </p>
+                    </div>
+                    <div>
+                        <h4>UI/UX <br> Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur,
+                                ratione architecto impedit tempore corrupti et
+                                praesentium iure, quod eum odio est voluptate incidunt
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---projects---->
+    <div id="projects">
+        <div class="container">
+            <h3 class="projects-heading">My Works</h3>
+            <div class="worklist">
+                <div class="work">
+                    <img src="portfolio1.jpg" style="height:250px;width: 350px;">
+                    <h4>My own Portfolio</h4>
+                    <p>I have made my own portfolio using html,css and javascript.
+                        <br>It was one of my lab projects.
+                    </p>
+                    <div><a href="#"><i class='bx bx-link-external'></i></a></div> <!--icons from boxicons-->
+                </div>
+                <div class="work">
+                    <img src="Education_Background_Vector_8.jpg" style="height:250px;width: 350px;">
+                    <h4>Find My Tutor</h4>
+                    <p>This is a management type application.
+                        This app is made in DESKTOP framewrok.
+                        It was the project of my advanced programming lab</p>
+                    <div><a href="#"><i class='bx bx-link-external'></i></a></div>
+                </div>
+                <div class="work">
+                    <img src="hospital-management-system.jpg" style="height:250px;width: 350px;">
+                    <h4>Hospital Managment System</h4>
+                    <p>This project was made of cpp.I have used the concepts og OOP(object oriented programming) in this
+                        case.
+                        this project was for my OOP lab
+                    </p>
+                    <div>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+
+    <!----hehe Javascript-->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
 
 </body>
 
